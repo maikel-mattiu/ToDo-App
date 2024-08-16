@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.toggle:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+.toggle:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: var(--radius);
+  right: var(--radius);
+  bottom: 0;
+  margin: auto;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 10px;
+}
+.toggle:focus-visible {
+  outline: 2px auto hsl(345deg 100% 50%);
+  outline-offset: 2px;
+}
+
+.ball {
+  display: block;
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-text);
+  outline: 2px solid var(--color-bg);
+}

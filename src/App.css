@@ -1,0 +1,224 @@
+/* src/index.css or src/App.css */
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('./assets/fonts/CascadiaCode.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cascadia Code', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-items .todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 2px dashed;
+}
+
+.todo-items .todo-item .task {
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 15px;
+  flex: 1;
+}
+
+
+input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+  /* Add a border for visual feedback */
+  border-radius: 3px;
+  /* Optional: Round the corners */
+  background-color: white;
+  /* Optional: Set a background color */
+  cursor: pointer;
+  /* Make it look clickable */
+}
+
+.todo-container {
+  border: 2px dashed black;
+  padding: 25px;
+  border-radius: 10px 10px;
+  width: 25%;
+  margin: 50px 0;
+}
+
+.todo-container-darkmode {
+  border: 2px dashed white;
+  padding: 25px;
+  border-radius: 10px 10px;
+  width: 25%;
+  margin: 50px 0;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 25%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+.todo-icon:hover {
+  color: hsla(204, 82%, 66%, 1);
+}
+
+.todo-item .todo-icon {
+  margin: 10px 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.todo-item .todo-icon-darkmode {
+  margin: 10px 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.todo-input[type=text] {
+  height: 32px;
+  width: 85%;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-family: Cascadia Code, monospace;
+  font-size: medium;
+  background-color: transparent;
+}
+
+.todo-input-darkmode[type=text] {
+  height: 32px;
+  width: 85%;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  font-family: Cascadia Code, monospace;
+  font-size: medium;
+  background-color: transparent;
+  color: white;
+}
+
+.todo-edit-input[type=text] {
+  height: 32px;
+  width: 277px;
+  border: none;
+  outline: none;
+  font-family: Cascadia Code, monospace;
+  font-size: medium;
+  background-color: transparent;
+}
+
+.todo-edit-input-darkmode[type=text] {
+  height: 32px;
+  width: 277px;
+  border: none;
+  outline: none;
+  font-family: Cascadia Code, monospace;
+  font-size: medium;
+  background-color: transparent;
+  color: white;
+}
+
+.todo-input[type=text]:focus {
+  border-bottom: 2px solid black;
+}
+
+.todo-input-darkmode::placeholder {
+  color: white;
+}
+
+.todo-input::placeholder {
+  color: black;
+}
+
+.todo-form .todo-icon {
+  margin: 10px 10px;
+  background-color: transparent;
+  border: none;
+
+}
+
+.todo-edit-form .todo-edit-icon {
+  margin: 5px 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.todo-edit-form .todo-edit-icon-darkmode {
+  margin: 10px 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: none;
+  padding: 20px 0;
+}
+
+.todo-edit-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+}
+
+.toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  place-content: center;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.task.completed {
+  text-decoration: line-through;
+}
+
+.todo-checkbox {
+  accent-color: black;
+  border: none;
+  background: transparent;
+  border: 2px solid black;
+  /* Add a border for visual feedback */
+  border-radius: 3px;
+  /* Optional: Round the corners */
+  background-color: white;
+  /* Optional: Set a background color */
+  cursor: pointer;
+  /* Make it look clickable */
+}
+
+.todo-checkbox-darkmode {
+  accent-color: white;
+  border: none;
+  background: transparent;
+  border: 2px solid white;
+  /* Add a border for visual feedback */
+  border-radius: 3px;
+  /* Optional: Round the corners */
+  background-color: black;
+  /* Optional: Set a background color */
+  cursor: pointer;
+  /* Make it look clickable */
+}
